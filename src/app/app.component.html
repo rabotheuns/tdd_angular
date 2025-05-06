@@ -1,0 +1,8 @@
+<h1>Welcome to the Tax Calculator App</h1>
+<div>
+    <label for="income">Income:</label>
+    <input id="income" type="number" [value]="income" (input)="onIncomeChange($event)" />
+</div>
+<button (click)="calculate()">Calculate Tax</button>
+<p *ngIf="calculatedTax !== null">Calculated Tax: {{ calculatedTax }}</p>
+
